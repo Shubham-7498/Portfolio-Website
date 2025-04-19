@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body id="body">
+    <nav id="desktop-nav">
+      <div class="logo">Shubham Gupta</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><h3>Shubham Gupta</h3></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="Shubham Gupta profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shubham Gupta</h1>
+        <p class="section__text__p2">AI & ML Enthusiast | Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="downloadCV()"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shubhamgupta0001'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My LinkedIn profile"
+            class="icon1"
+            onclick="location.href='https://instagram.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Shubham-7498'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ Months <br />Data Analysis & Visualisation</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors of Computer Applications <br />Specialization in AI & ML</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I am a motivated and detail-oriented with a strong foundation in data analysis and visualization, backed by my recent completion of a Bachelor of Computer Applications (BCA). I have a keen interest in leveraging data to solve real-world problems and create actionable insights. I skilled in tools and technologies like Python, SQL, Advanced Excel, Power BI, and Tableau. Currently learning Machine learning, Artificial Intelligence and Deep Learning to enhance my analytical and predictive modeling skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div id="skills">
+        <h2>Skill Set</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <span>Probability & Statistics</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+      
+          <div class="skill">
+            <span>Natural Language Processing</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+      
+          <div class="skill">
+            <span>Machine Learning</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>Data Analytics & Visualization</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>Artificial Intelligence</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>Computer Vision</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 20%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tools">
+        <h2>Tools & Technologies</h2>
+        <div class="tools-container">
+          <div class="tool"><img src="./assets/python.png" alt=""><h3>Python</h3></div>
+          <div class="tool"><img src="./assets/sql.png" alt=""><h3>SQL</h3></div>
+          <div class="tool"><img src="./assets/tableau.png" alt=""><h3>Tableau</h3></div>
+          <div class="tool"><img src="./assets/power bi.png" alt=""><h3>Power BI</h3></div>
+          <div class="tool"><img src="./assets/excel.png" alt=""><h3>Excel</h3></div>
+          <div class="tool"><img src="./assets/scikit-learn.png" alt=""><h3>Scikit Learn</h3></div>
+          <div class="tool"><img src="./assets/tensorflow.png" alt=""><h3>TensorFlow</h3></div>
+          <div class="tool"><img src="./assets/pytorch.png" alt=""><h3>PyTorch</h3></div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Iris Flower Classifier</h2>
+            <p>This project predicts the species of an iris flower based on its size using a...</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Shubham-7498'"
+              >
+                Github
+              </button>
+              <a href="https://iris-flowers-classifier.onrender.com/">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sales Dashboard</h2>
+            <p>The Sales Dashboard is a dynamic data visualization platform designed to...</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Shubham-7498'"
+              >
+                Github
+              </button>
+              <a href="https://public.tableau.com/views/SalesDashboard_17343532183920/SalesDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ev Vehicles Dashboard</h2>
+            <p>This Dashboard is an interactive platform that visualizes the Vehicles...</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Shubham-7498'"
+              >
+                Github
+              </button>
+              <a href="https://public.tableau.com/views/EVVehiclesDataAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-more">
+        <a href="https://github.com/Shubham-7498"><button>View more</button></a>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <form action="#">
+          <div class="dbl-field">
+            <div class="field">
+              <img src="./assets/icons8-user-30.png" alt="user icon" class="icon contact-icon email-icon">
+              <input type="text" name="name" placeholder="Enter Your Name"/>
+            </div>
+            <div class="field">
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon emaili"/>
+              <input type="text" name="email" placeholder="Enter Your Email" />
+            </div>
+          </div>
+          <div class="dbl-field">
+            <div class="field">
+              <img src="./assets/icons8-phone-30.png" alt="Phone icon" class="icon contact-icon email-icon">
+              <input type="text" name="phone" placeholder="Enter Your Phone"  />
+            </div>
+            <div class="field">
+              <img src="./assets/icons8-globe-50.png" alt="Website icon" class="icon contact-icon email-icon"/>
+              <input type="text" name="website" placeholder="Enter Your Website"/>
+            </div>
+          </div>
+          <div class="message">
+            <textarea placeholder="Write Your essage" name="message"></textarea>
+            <img src="./assets/message.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          </div>
+          <div class="buttonarea">
+            <button type="submit" class="btn btn-color-2">Send Message</button>
+            <span>Sending your message...</span>
+          </div>
+        </form>
+        
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#body">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Shubham Gupta. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+

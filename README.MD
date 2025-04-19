@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to my personal portfolio website! This site showcases my work, skills, and projects as a web developer.
+Welcome to my personal portfolio website! This site showcases my work, skills, and projects as a AI and ML enthusiastic.
 
 ## Features
 

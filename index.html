@@ -286,21 +286,21 @@
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
-        <form action="#">
+        <form action="#" id="contact-form">
           <div class="dbl-field">
             <div class="field">
               <img src="./assets/icons8-user-30.png" alt="user icon" class="icon contact-icon email-icon">
-              <input type="text" name="name" placeholder="Enter Your Name"/>
+              <input type="text" name="name" placeholder="Enter Your Name" required/>
             </div>
             <div class="field">
               <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon emaili"/>
-              <input type="text" name="email" placeholder="Enter Your Email" />
+              <input type="text" name="email" placeholder="Enter Your Email" required/>
             </div>
           </div>
           <div class="dbl-field">
             <div class="field">
               <img src="./assets/icons8-phone-30.png" alt="Phone icon" class="icon contact-icon email-icon">
-              <input type="text" name="phone" placeholder="Enter Your Phone"  />
+              <input type="text" name="phone" placeholder="Enter Your Phone"  required/>
             </div>
             <div class="field">
               <img src="./assets/icons8-globe-50.png" alt="Website icon" class="icon contact-icon email-icon"/>
@@ -308,12 +308,12 @@
             </div>
           </div>
           <div class="message">
-            <textarea placeholder="Write Your essage" name="message"></textarea>
+            <textarea placeholder="Write Your essage" name="message" required></textarea>
             <img src="./assets/message.png" alt="Email icon" class="icon contact-icon email-icon"/>
           </div>
           <div class="buttonarea">
-            <button type="submit" class="btn btn-color-2">Send Message</button>
-            <span>Sending your message...</span>
+            <button type="submit" class="btn btn-color-2" id="send-btn">Send Message</button>
+<!--             <span>Sending your message...</span> -->
           </div>
         </form>
         

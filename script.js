@@ -1,3 +1,20 @@
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+
+function downloadCV() {
+  const link = document.createElement('a');
+  link.href = './assets/Shubham_Resume.pdf';
+  link.download = 'Shubham_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link)
+}
+
+
 
 // const form = document.querySelector("form");
 // statusTxt = form.querySelector(".buttonarea span");
@@ -55,22 +72,5 @@
       });
   });
 });
-
-
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-  }
-
-function downloadCV() {
-  const link = document.createElement('a');
-  link.href = './assets/Shubham_Resume.pdf';
-  link.download = 'Shubham_Resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link)
-}
 
 
